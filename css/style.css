@@ -1,0 +1,64 @@
+/* CSS reset + basic styling */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+body {
+	margin: 25px;
+}
+
+/* Selectbox styling */
+.selectbox {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #dbdbdb;
+	cursor: pointer;
+	padding: 5px 25px 5px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	background: #efefef url("../img/selectbox.png") no-repeat right center;
+	background: url("../img/selectbox.png") no-repeat right center, -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%);
+	background: url("../img/selectbox.png") no-repeat right center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+	background: url("../img/selectbox.png") no-repeat right center, -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+	background: url("../img/selectbox.png") no-repeat right center, -o-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+	background: url("../img/selectbox.png") no-repeat right center, -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%);
+	background: url("../img/selectbox.png") no-repeat right center, linear-gradient(top,  #ffffff 0%,#efefef 100%);
+}
+
+.selectbox ul {
+	margin-top: 1px;
+	position: absolute;
+	left: -1px;
+	top: 32px;
+	background: #fff;
+	list-style: none;
+	border: 1px solid #dbdbdb;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #999;
+	-moz-box-shadow: 5px 5px 10px #999;
+	-webkit-box-shadow: 5px 5px 10px #999;
+	width: 100%;
+	overflow: hidden;
+	font-weight: normal;
+	z-index: 1;
+}
+
+.selectbox li {
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+.selectbox li:hover {
+	background: #efefef;
+}
+
+.sb_1 {
+	width: 120px;
+}
+
+.sb_2 {
+	width: 150px;
+}
