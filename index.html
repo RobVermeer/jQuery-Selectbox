@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>jQuery Selectbox</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+	<form method="post">
+		<select name="city">
+			<option value="">Select city</option>
+			<option value="amsterdam">Amsterdam</option>
+			<option value="london">London</option>
+			<option value="paris">Paris</option>
+		</select>
+		
+		<select name="country">
+			<option value="">Select country</option>
+			<option value="netherlands">Netherlands</option>
+			<option value="great-britain">Great britain</option>
+			<option value="france">France</option>
+		</select>
+	</form>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="js/selectbox.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function (){
+			$("select").selectbox();
+		});
+	})(jQuery);
+	</script>
+</body>
+</html>
