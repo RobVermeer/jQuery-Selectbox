@@ -13,6 +13,11 @@
 		};
 		var opts = $.extend(defaults, options);
 		var selectbox = 1;
+		
+		$('html').click(function() {
+			$(".selectbox").find('ul').hide();
+		});
+		
 		return this.each(function(){
 			var $this = $(this);
 			$this.hide();
@@ -28,8 +33,9 @@
 			});
 
 			
-			$(".sb_" + selectbox).click(function() {
+			$(".sb_" + selectbox).click(function(e) {
 				$(this).find('ul').toggle();
+				e.stopPropagation();
 			});
 			
 			$(".sb_" + selectbox + ' li').click(function() {
