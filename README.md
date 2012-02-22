@@ -2,7 +2,6 @@
 
 ## Todo
 Refactor code.
-Click outside selectbox hides selectbox.
 
 ## Requirement
 jQuery 1.4+
