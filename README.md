@@ -1,7 +1,8 @@
 ## jQuery selectbox plugin v1.0
 
 ## Todo
-Refactoring code.
+Refactor code.
+Write better support.
 
 ## Requirement
 jQuery 1.4+
