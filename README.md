@@ -3,6 +3,7 @@
 ## Todo
 Refactor code. 
 Write better support.
+Drink coffee.
 
 ## Requirement
 jQuery 1.4+
