@@ -20,7 +20,7 @@
 		return this.each(function(){
 			var $this = $(this),
 				selectbox = $this.attr('id');
-			//$this.hide();
+			$this.hide();
 			$this.before('<div class="selectbox ' + selectbox + '"><span>' + $this.children().first().text() + '</span></div>');
 			$("." + selectbox).data('sb', selectbox).append('<ul></ul>');
 			$($this).find('option').each( function() {
